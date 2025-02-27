@@ -16,6 +16,7 @@ plugins=(
   git
   sudo
   tmux
+  you-should-use
   z
   zsh-autosuggestions
   zsh-bat
