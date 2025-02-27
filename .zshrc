@@ -4,6 +4,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Vim as default
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # Plugins
 plugins=(
   colored-man-pages
