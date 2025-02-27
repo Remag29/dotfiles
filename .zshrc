@@ -18,6 +18,12 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/tristan/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
 # OhMyZSH script
 source $ZSH/oh-my-zsh.sh
 
