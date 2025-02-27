@@ -45,13 +45,13 @@ format = "at [$path]($style)[$read_only]($read_only_style) "
 
 # Disable the package module, hiding it from the prompt completely
 [package]
-symbol = " "
+symbol = " "
 disabled = true
 
 [battery]
-full_symbol = "🔋 "
-charging_symbol = "⚡️ "
-discharging_symbol = "💀 "
+full_symbol = "󱟢 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󱃍 "
 
 [python]
 symbol = " "
@@ -70,7 +70,7 @@ format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 [git_branch]
 symbol = " "
 format = "on [$symbol$branch]($style) "
-truncation_length = 4
+truncation_length = 15
 truncation_symbol = "…/"
 style = "bold green"
 
@@ -83,10 +83,10 @@ untracked = " "
 ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
-stashed = " "
+stashed = " "
 modified = " "
 staged = '[++\($count\)](green)'
-renamed = "襁 "
+renamed = "󰑕 "
 deleted = " "
 
 [aws]
@@ -132,13 +132,13 @@ symbol = " "
 symbol = " "
 
 [memory_usage]
-symbol = " "
+symbol = " "
 
 [meson]
 symbol = "喝 "
 
 [nim]
-symbol = " "
+symbol = " "
 
 [nix_shell]
 symbol = " "
@@ -158,10 +158,10 @@ Emscripten = " "
 EndeavourOS = " "
 Fedora = " "
 FreeBSD = " "
-Garuda = "﯑ "
+Garuda = " "
 Gentoo = " "
 HardenedBSD = "ﲊ "
-Illumos = " "
+Illumos = " "
 Linux = " "
 Macos = " "
 Manjaro = " "
@@ -178,14 +178,14 @@ Raspbian = " "
 Redhat = " "
 RedHatEnterprise = " "
 Redox = " "
-Solus = "ﴱ "
+Solus = " "
 SUSE = " "
 Ubuntu = " "
-Unknown = " "
-Windows = " "
+Unknown = "? "
+Windows = " "
 
 [rlang]
-symbol = "ﳒ "
+symbol = "󰟔 "
 
 [ruby]
 symbol = " "
