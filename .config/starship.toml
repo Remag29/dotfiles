@@ -23,7 +23,7 @@ style = "bold blue"
 disabled = false
 
 [hostname]
-ssh_only = true
+ssh_only = false
 ssh_symbol = ""
 format = "$ssh_symbol [$hostname ]($style)"
 style = "bold dimmed fg:231"
