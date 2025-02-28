@@ -1,4 +1,4 @@
-'/Users/tristan/.zshrc' -> '/Users/tristan/dotfiles/.zshrc' # Zsh configuration file
-'/Users/tristan/.vimrc' -> '/Users/tristan/dotfiles/.vimrc' # Vim configuration file
-'/Users/tristan/.tmux.conf' -> '/Users/tristan/dotfiles/.tmux.conf' # Tmux configuration file
-'/Users/tristan/.config/starship.toml' -> '/Users/tristan/dotfiles/.config/starship.toml' # Starship configuration file
+'/home/tristan/.zshrc' -> '/home/tristan/dotfiles/.zshrc' # Zsh configuration file
+'/home/tristan/.vimrc' -> '/home/tristan/dotfiles/.vimrc' # Vim configuration file
+'/home/tristan/.tmux.conf' -> '/home/tristan/dotfiles/.tmux.conf' # Tmux configuration file
+'/home/tristan/.config/starship.toml' -> '/home/tristan/dotfiles/.config/starship.toml' # Starship configuration file
