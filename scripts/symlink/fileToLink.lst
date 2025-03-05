@@ -2,3 +2,5 @@
 '/home/tristan/.vimrc' -> '/home/tristan/dotfiles/.vimrc' # Vim configuration file
 '/home/tristan/.tmux.conf' -> '/home/tristan/dotfiles/.tmux.conf' # Tmux configuration file
 '/home/tristan/.config/starship.toml' -> '/home/tristan/dotfiles/.config/starship.toml' # Starship configuration file
+'/home/tristan/.oh-my-zsh/custom/aliases.zsh' -> '/home/tristan/dotfiles/.oh-my-zsh/custom/aliases.zsh' # Aliases config for Zsh
+'/home/tristan/.oh-my-zsh/custom/fzf.zsh' -> '/home/tristan/dotfiles/.oh-my-zsh/custom/fzf.zsh' # Fzf config for Zsh
