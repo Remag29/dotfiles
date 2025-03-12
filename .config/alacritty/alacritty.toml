@@ -1,0 +1,17 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/tokyo_night_storm.toml"
+]
+
+[env]
+XTERM = "xterm-256color"
+
+[font]
+size = 16
+normal.family = "JetBrainsMono Nerd Font"
+bold.family = "JetBrainsMono Nerd Font"
+italic.family = "JetBrainsMono Nerd Font"
+bold_italic.family = "JetBrainsMono Nerd Font"
+
+[window]
+opacity = 0.9
