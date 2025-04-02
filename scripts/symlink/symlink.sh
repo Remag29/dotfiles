@@ -6,6 +6,18 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Check if the file fileToLink.lst exists in the script directory
 LIST_FILE="$SCRIPT_DIR/fileToLink.lst"
 
+# Default values for options
+AUTO_BACKUP=false
+
+# Parse command-line arguments
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+        --backup|-b) AUTO_BACKUP=true ;;
+        *) echo "Unknown option: $1"; exit 1 ;;
+    esac
+    shift
+done
+
 if [[ ! -f "$LIST_FILE" ]]; then
     echo "Error: The file $LIST_FILE does not exist."
     exit 1
@@ -40,14 +52,19 @@ while IFS= read -r line || [[ -n "$line" ]]; do
 
     elif [[ -e "$dest" ]]; then
         echo "The file $dest already exists."
-        read -p "Do you want to create a backup? (Y/n) " response
-        response=$(echo "$response" | tr '[:upper:]' '[:lower:]') # Convert to lowercase
-        if [[ "$response" != "n" ]]; then
+        if [[ "$AUTO_BACKUP" == true ]]; then
             mv "$dest" "$dest.bak"
             echo "Backup created: $dest.bak"
         else
-            rm -f "$dest"
-            echo "Existing file removed."
+            read -p "Do you want to create a backup? (Y/n) " response
+            response=$(echo "$response" | tr '[:upper:]' '[:lower:]') # Convert to lowercase
+            if [[ "$response" != "n" ]]; then
+                mv "$dest" "$dest.bak"
+                echo "Backup created: $dest.bak"
+            else
+                rm -f "$dest"
+                echo "Existing file removed."
+            fi
         fi
     fi
     
