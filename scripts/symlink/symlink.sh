@@ -23,6 +23,10 @@ while IFS= read -r line || [[ -n "$line" ]]; do
     src=${src//\'/}
     dest=${dest//\'/}
     
+    # Expand variables in paths
+    src=$(eval echo "$src")
+    dest=$(eval echo "$dest")
+
     # Check if the source file exists
     if [[ ! -e "$src" ]]; then
         echo "Warning: The source file $src does not exist. Skipping."
