@@ -67,7 +67,10 @@ while IFS= read -r line || [[ -n "$line" ]]; do
             fi
         fi
     fi
-    
+
+    # Create parent directories for the destination if they don't exist
+    mkdir -p "$(dirname "$dest")"
+
     # Create the symbolic link
     ln -s "$src" "$dest"
     echo "Symbolic link created: $dest -> $src"
