@@ -1,0 +1,23 @@
+FROM ubuntu:24.04
+
+RUN apt update && apt install -y sudo
+
+# Create a non-root user
+RUN useradd -m testuser -s /bin/bash && \
+usermod -aG sudo testuser && \
+echo 'testuser ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && \
+echo 'testuser:testuser' | chpasswd
+
+# Define working directory
+WORKDIR /home/testuser/dotfiles
+
+# Copy the script and configuration files
+COPY ../../. .
+
+RUN chown -R testuser:testuser ./
+
+# Switch to the non-root user
+USER testuser
+
+# Execute the script
+ENTRYPOINT [ "/bin/bash" ]
