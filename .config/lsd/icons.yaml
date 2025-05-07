@@ -1,0 +1,19 @@
+name:
+  .trash: 
+  .cargo: 
+  docker-compose.yaml: 
+  docker-compose.yml: 
+extension:
+  go: 
+  hs: 
+  rs: 
+  sh: 󰯁
+  tf: 
+filetype:
+  socket: 󰆨
+  executable: 
+  symlink-dir: 
+  symlink-file: 
+  device-char: 
+  device-block: 󰜫
+  special: 
