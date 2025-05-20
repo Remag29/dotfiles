@@ -1,7 +1,2 @@
-'$HOME/.zshrc' -> '$HOME/dotfiles/.zshrc' # Zsh configuration file
-'$HOME/.vimrc' -> '$HOME/dotfiles/.vimrc' # Vim configuration file
-'$HOME/.tmux.conf' -> '$HOME/dotfiles/.tmux.conf' # Tmux configuration file
 '$HOME/.config/starship.toml' -> '$HOME/dotfiles/.config/starship.toml' # Starship configuration file
 '$HOME/.config/lsd/icons.yaml' -> '$HOME/dotfiles/.config/lsd/icons.yaml' # LsDeluxe icons config
-'$HOME/.oh-my-zsh/custom/aliases.zsh' -> '$HOME/dotfiles/.oh-my-zsh/custom/aliases.zsh' # Aliases config for Zsh
-'$HOME/.oh-my-zsh/custom/fzf.zsh' -> '$HOME/dotfiles/.oh-my-zsh/custom/fzf.zsh' # Fzf config for Zsh
