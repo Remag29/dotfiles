@@ -1,8 +1,9 @@
 # Alias perso
-alias ip='ip -c'
+alias cls="clear"
+alias lg="lazygit"
 alias ll="lsd -l --git"
-alias lt="lsd --tree --git"
 alias lla="lsd -al --git"
 alias llt="lsd -l --tree --git"
-alias cls="clear"
+alias lt="lsd --tree --git"
+alias ip='ip -c'
 alias watch="watch -c"
