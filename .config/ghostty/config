@@ -1,0 +1,9 @@
+# My ghostty config
+
+theme = tokyonight-storm
+
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 16
+background-opacity = 0.90
+
+shell-integration = zsh
