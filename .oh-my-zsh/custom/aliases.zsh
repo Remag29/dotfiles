@@ -1,9 +1,10 @@
 # Alias perso
 alias cls="clear"
+alias ip='ip -c'
 alias lg="lazygit"
 alias ll="lsd -l --git"
 alias lla="lsd -al --git"
 alias llt="lsd -l --tree --git"
 alias lt="lsd --tree --git"
-alias ip='ip -c'
+alias t= "tmux"
 alias watch="watch -c"
