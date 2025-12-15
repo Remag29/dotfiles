@@ -4,3 +4,4 @@ Invoke-Expression (&starship init powershell)
 function ll { lsd.exe -l --git}
 function lla { lsd.exe -al --git}
 function llt { lsd.exe -l --git --tree}
+function lz {lazygit.exe}
