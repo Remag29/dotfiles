@@ -212,5 +212,5 @@ style = "bold #E74444"
 shell = ["bash", "--noprofile", "--norc"]
 
 [kubernetes]
-disabled = "false"
+disabled = false
 detect_env_vars = "KUBECONFIG"
