@@ -213,4 +213,4 @@ shell = ["bash", "--noprofile", "--norc"]
 
 [kubernetes]
 disabled = false
-detect_env_vars = "KUBECONFIG"
+detect_env_vars = ['KUBECONFIG']
