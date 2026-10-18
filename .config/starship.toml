@@ -207,7 +207,7 @@ symbol = ""
 description = "Actif Talos contexte"
 when = 'test -n "$TALOSCONFIG" && test -f "$TALOSCONFIG"'
 command = 'grep "^context:" "$TALOSCONFIG" | awk "{print \$2}"'
-format = "[⎈ talos:$output]($style) "
-style = "bold cyan"
+format = "[\ue948 $output]($style) "
+style = "bold #E74444"
 shell = ["bash", "--noprofile", "--norc"]
 
