@@ -211,3 +211,6 @@ format = "[\ue948 $output]($style) "
 style = "bold #E74444"
 shell = ["bash", "--noprofile", "--norc"]
 
+[kubernetes]
+disabled = "false"
+detect_env_vars = "KUBECONFIG"
